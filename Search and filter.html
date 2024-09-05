@@ -1,152 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search and Filter Interface</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<style>
-</style>
-<body class="bg-gray-100 font-roboto">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style></style>
+  <body class="bg-gray-100 font-roboto">
     <!-- Header -->
     <header class="bg-green-600 text-white text-center p-4">
-        <h1 class="text-xl font-bold">Search and Filter</h1>
+      <h1 class="text-xl font-bold">Search and Filter</h1>
     </header>
 
     <!-- Main Content -->
-    <main class="p-4" style="padding-bottom: 100px;">
+    <main class="p-4" style="padding-bottom: 100px">
+      <!-- Search Bar with Voice Assistant -->
+      <section class="mb-6">
+        <div class="flex items-center bg-white p-2 rounded-md shadow-md">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            class="w-full p-2 text-gray-700 rounded-md focus:outline-none"
+          />
+          <button class="ml-2 p-2 bg-green-600 text-white rounded-md">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+        <p class="mt-2 text-sm text-gray-600">
+          Use the microphone to search by speaking in your preferred language.
+        </p>
+      </section>
 
-        <!-- Search Bar with Voice Assistant -->
-        <section class="mb-6">
-            <div class="flex items-center bg-white p-2 rounded-md shadow-md">
-                <input type="text" placeholder="Search for products..." class="w-full p-2 text-gray-700 rounded-md focus:outline-none">
-                <button class="ml-2 p-2 bg-green-600 text-white rounded-md">
-                    <i class="fas fa-microphone"></i>
-                </button>
+      <!-- Filters -->
+      <section class="mb-6">
+        <h2 class="text-lg font-bold mb-4">Filters</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <h3 class="text-md font-bold mb-2">Category</h3>
+            <select class="w-full p-2 border border-gray-300 rounded-md">
+              <option value="" disabled selected>Select category</option>
+              <option value="fruits">Fruits</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="dairy">Dairy</option>
+            </select>
+          </div>
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <h3 class="text-md font-bold mb-2">Price Range</h3>
+            <div class="flex items-center">
+              <input
+                type="number"
+                placeholder="Min"
+                class="w-1/2 p-2 border border-gray-300 rounded-md mr-2"
+              />
+              <input
+                type="number"
+                placeholder="Max"
+                class="w-1/2 p-2 border border-gray-300 rounded-md"
+              />
             </div>
-            <p class="mt-2 text-sm text-gray-600">Use the microphone to search by speaking in your preferred language.</p>
-        </section>
+          </div>
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <h3 class="text-md font-bold mb-2">Location</h3>
+            <input
+              type="text"
+              placeholder="Enter location"
+              class="w-full p-2 border border-gray-300 rounded-md"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- Filters -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold mb-4">Filters</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <h3 class="text-md font-bold mb-2">Category</h3>
-                    <select class="w-full p-2 border border-gray-300 rounded-md">
-                        <option value="" disabled selected>Select category</option>
-                        <option value="fruits">Fruits</option>
-                        <option value="vegetables">Vegetables</option>
-                        <option value="dairy">Dairy</option>
-                    </select>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <h3 class="text-md font-bold mb-2">Price Range</h3>
-                    <div class="flex items-center">
-                        <input type="number" placeholder="Min" class="w-1/2 p-2 border border-gray-300 rounded-md mr-2">
-                        <input type="number" placeholder="Max" class="w-1/2 p-2 border border-gray-300 rounded-md">
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <h3 class="text-md font-bold mb-2">Location</h3>
-                    <input type="text" placeholder="Enter location" class="w-full p-2 border border-gray-300 rounded-md">
-                </div>
+      <!-- Filtered Product Grid -->
+      <section>
+        <h2 class="text-lg font-bold mb-4">Filtered Products</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <div>
+              <img
+                src="https://placehold.co/150x150"
+                alt="Image of fresh apples"
+                class="w-full h-32 object-cover rounded-md mb-2"
+              />
+              <h3 class="text-md font-bold">Fresh Apples</h3>
+              <p class="text-sm text-gray-600">$1.50 per lb</p>
+              <p class="text-sm text-gray-600">Location: Springfield</p>
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="Communication platform.html"
+                  class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
+                  style="margin: 20px auto"
+                >
+                  Connect
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Filtered Product Grid -->
-        <section>
-            <h2 class="text-lg font-bold mb-4">Filtered Products</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <div>
-                        <img src="https://placehold.co/150x150" alt="Image of fresh apples" class="w-full h-32 object-cover rounded-md mb-2">
-                        <h3 class="text-md font-bold">Fresh Apples</h3>
-                        <p class="text-sm text-gray-600">$1.50 per lb</p>
-                        <p class="text-sm text-gray-600">Location: Springfield</p>
-                        <div style="display: flex; justify-content: center;">
-                            <a href="Communication platform.html" class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline" style="margin: 20px auto;">
-                                Connect
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <div>
-                        <img src="https://placehold.co/150x150" alt="Image of fresh carrots" class="w-full h-32 object-cover rounded-md mb-2">
-                        <h3 class="text-md font-bold">Fresh Carrots</h3>
-                        <p class="text-sm text-gray-600">$2.00 per lb</p>
-                        <p class="text-sm text-gray-600">Location: Shelbyville</p>
-                        <div style="display: flex; justify-content: center;">
-                            <a href="Communication platform.html" class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline" style="margin: 20px auto;">
-                                Connect
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <div>
-                        <img src="https://placehold.co/150x150" alt="Image of organic milk" class="w-full h-32 object-cover rounded-md mb-2">
-                        <h3 class="text-md font-bold">Organic Milk</h3>
-                        <p class="text-sm text-gray-600">$3.50 per gallon</p>
-                        <p class="text-sm text-gray-600">Location: Springfield</p>
-                        <div style="display: flex; justify-content: center;">
-                            <a href="Communication platform.html" class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline" style="margin: 20px auto;">
-                                Connect
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <div>
-                        <img src="https://placehold.co/150x150" alt="Image of fresh strawberries" class="w-full h-32 object-cover rounded-md mb-2">
-                        <h3 class="text-md font-bold">Fresh Strawberries</h3>
-                        <p class="text-sm text-gray-600">$4.00 per lb</p>
-                        <p class="text-sm text-gray-600">Location: Shelbyville</p>
-                        <div style="display: flex; justify-content: center;">
-                            <a href="Communication platform.html" class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline" style="margin: 20px auto;">
-                                Connect
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <div>
+              <img
+                src="https://placehold.co/150x150"
+                alt="Image of fresh carrots"
+                class="w-full h-32 object-cover rounded-md mb-2"
+              />
+              <h3 class="text-md font-bold">Fresh Carrots</h3>
+              <p class="text-sm text-gray-600">$2.00 per lb</p>
+              <p class="text-sm text-gray-600">Location: Shelbyville</p>
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="Communication platform.html"
+                  class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
+                  style="margin: 20px auto"
+                >
+                  Connect
+                </a>
+              </div>
             </div>
-        </section>        
+          </div>
 
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <div>
+              <img
+                src="https://placehold.co/150x150"
+                alt="Image of organic milk"
+                class="w-full h-32 object-cover rounded-md mb-2"
+              />
+              <h3 class="text-md font-bold">Organic Milk</h3>
+              <p class="text-sm text-gray-600">$3.50 per gallon</p>
+              <p class="text-sm text-gray-600">Location: Springfield</p>
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="Communication platform.html"
+                  class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
+                  style="margin: 20px auto"
+                >
+                  Connect
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <div>
+              <img
+                src="https://placehold.co/150x150"
+                alt="Image of fresh strawberries"
+                class="w-full h-32 object-cover rounded-md mb-2"
+              />
+              <h3 class="text-md font-bold">Fresh Strawberries</h3>
+              <p class="text-sm text-gray-600">$4.00 per lb</p>
+              <p class="text-sm text-gray-600">Location: Shelbyville</p>
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="Communication platform.html"
+                  class="bg-green-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
+                  style="margin: 20px auto"
+                >
+                  Connect
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
-        <div class="flex justify-around text-center py-2">
-            <a href="Homepage.html" class="text-green-600 flex flex-col items-center">
-                <i class="fas fa-home text-2xl"></i>
-                <span class="text-xs">Home</span>
-            </a>
-            <a href="market trends and pricing.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-chart-line text-2xl"></i>
-                <span class="text-xs">Market Trends</span>
-            </a>
-            <a href="Search and filter.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-shopping-cart text-2xl"></i>
-                <span class="text-xs">Buy</span>
-            </a>
-            <a href="Product listing.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-hand-holding-usd text-2xl"></i>
-                <span class="text-xs">Sell</span>
-            </a>
-            <a href="Order management.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-clipboard-list text-2xl"></i>
-                <span class="text-xs">Orders</span>
-            </a>
-        </div>
+      <div class="flex justify-around text-center py-2">
+        <a href="index.html" class="text-green-600 flex flex-col items-center">
+          <i class="fas fa-home text-2xl"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a
+          href="market trends and pricing.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-chart-line text-2xl"></i>
+          <span class="text-xs">Market Trends</span>
+        </a>
+        <a
+          href="Search and filter.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-shopping-cart text-2xl"></i>
+          <span class="text-xs">Buy</span>
+        </a>
+        <a
+          href="Product listing.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-hand-holding-usd text-2xl"></i>
+          <span class="text-xs">Sell</span>
+        </a>
+        <a
+          href="Order management.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-clipboard-list text-2xl"></i>
+          <span class="text-xs">Orders</span>
+        </a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

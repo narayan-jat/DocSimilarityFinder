@@ -1,114 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Listing & Visibility</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-100 font-roboto">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-roboto">
     <!-- Header -->
     <header class="bg-green-600 text-white text-center p-4">
-        <h1 class="text-xl font-bold">Product Listing & Visibility</h1>
+      <h1 class="text-xl font-bold">Product Listing & Visibility</h1>
     </header>
 
     <!-- Main Content -->
-    <main class="p-4" style="padding-bottom: 100px;">
+    <main class="p-4" style="padding-bottom: 100px">
+      <!-- Seller Product Listing Form -->
+      <section class="mb-6">
+        <h2 class="text-lg font-bold mb-4">Upload and Manage Produce</h2>
+        <form class="bg-white p-4 rounded-md shadow-md">
+          <div class="mb-4">
+            <label
+              for="productName"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Product Name</label
+            >
+            <input
+              type="text"
+              id="productName"
+              class="w-full p-2 border border-gray-300 rounded-md"
+              placeholder="Enter product name"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="productCategory"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Category</label
+            >
+            <select
+              id="productCategory"
+              class="w-full p-2 border border-gray-300 rounded-md"
+            >
+              <option value="" disabled selected>Select category</option>
+              <option value="fruits">Fruits</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="dairy">Dairy</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label
+              for="productPrice"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Price</label
+            >
+            <input
+              type="number"
+              id="productPrice"
+              class="w-full p-2 border border-gray-300 rounded-md"
+              placeholder="Enter price"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="productQuantity"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Quantity</label
+            >
+            <input
+              type="number"
+              id="productQuantity"
+              class="w-full p-2 border border-gray-300 rounded-md"
+              placeholder="Enter quantity"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="productImage"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Product Image</label
+            >
+            <input
+              type="file"
+              id="productImage"
+              class="w-full p-2 border border-gray-300 rounded-md"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white py-2 rounded-md"
+          >
+            Add Product
+          </button>
+        </form>
+      </section>
 
-        <!-- Seller Product Listing Form -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold mb-4">Upload and Manage Produce</h2>
-            <form class="bg-white p-4 rounded-md shadow-md">
-                <div class="mb-4">
-                    <label for="productName" class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
-                    <input type="text" id="productName" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter product name">
-                </div>
-                <div class="mb-4">
-                    <label for="productCategory" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                    <select id="productCategory" class="w-full p-2 border border-gray-300 rounded-md">
-                        <option value="" disabled selected>Select category</option>
-                        <option value="fruits">Fruits</option>
-                        <option value="vegetables">Vegetables</option>
-                        <option value="dairy">Dairy</option>
-                    </select>
-                </div>
-                <div class="mb-4">
-                    <label for="productPrice" class="block text-sm font-medium text-gray-700 mb-1">Price</label>
-                    <input type="number" id="productPrice" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter price">
-                </div>
-                <div class="mb-4">
-                    <label for="productQuantity" class="block text-sm font-medium text-gray-700 mb-1">Quantity</label>
-                    <input type="number" id="productQuantity" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter quantity">
-                </div>
-                <div class="mb-4">
-                    <label for="productImage" class="block text-sm font-medium text-gray-700 mb-1">Product Image</label>
-                    <input type="file" id="productImage" class="w-full p-2 border border-gray-300 rounded-md">
-                </div>
-                <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md">Add Product</button>
-            </form>
-        </section>
-
-        <!-- Buyer Product Grid -->
-        <section>
-            <h2 class="text-lg font-bold mb-4">Available Products</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <img src="https://placehold.co/150x150" alt="Image of fresh apples" class="w-full h-32 object-cover rounded-md mb-2">
-                    <h3 class="text-md font-bold">Fresh Apples</h3>
-                    <p class="text-sm text-gray-600">$1.50 per lb</p>
-                    <p class="text-sm text-gray-600">Quantity: 100 lbs</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <img src="https://placehold.co/150x150" alt="Image of fresh carrots" class="w-full h-32 object-cover rounded-md mb-2">
-                    <h3 class="text-md font-bold">Fresh Carrots</h3>
-                    <p class="text-sm text-gray-600">$2.00 per lb</p>
-                    <p class="text-sm text-gray-600">Quantity: 50 lbs</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <img src="https://placehold.co/150x150" alt="Image of organic milk" class="w-full h-32 object-cover rounded-md mb-2">
-                    <h3 class="text-md font-bold">Organic Milk</h3>
-                    <p class="text-sm text-gray-600">$3.50 per gallon</p>
-                    <p class="text-sm text-gray-600">Quantity: 30 gallons</p>
-                </div>
-                <div class="bg-white p-4 rounded-md shadow-md">
-                    <img src="https://placehold.co/150x150" alt="Image of fresh strawberries" class="w-full h-32 object-cover rounded-md mb-2">
-                    <h3 class="text-md font-bold">Fresh Strawberries</h3>
-                    <p class="text-sm text-gray-600">$4.00 per lb</p>
-                    <p class="text-sm text-gray-600">Quantity: 20 lbs</p>
-                </div>
-            </div>
-        </section>
-
+      <!-- Buyer Product Grid -->
+      <section>
+        <h2 class="text-lg font-bold mb-4">Available Products</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <img
+              src="https://placehold.co/150x150"
+              alt="Image of fresh apples"
+              class="w-full h-32 object-cover rounded-md mb-2"
+            />
+            <h3 class="text-md font-bold">Fresh Apples</h3>
+            <p class="text-sm text-gray-600">$1.50 per lb</p>
+            <p class="text-sm text-gray-600">Quantity: 100 lbs</p>
+          </div>
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <img
+              src="https://placehold.co/150x150"
+              alt="Image of fresh carrots"
+              class="w-full h-32 object-cover rounded-md mb-2"
+            />
+            <h3 class="text-md font-bold">Fresh Carrots</h3>
+            <p class="text-sm text-gray-600">$2.00 per lb</p>
+            <p class="text-sm text-gray-600">Quantity: 50 lbs</p>
+          </div>
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <img
+              src="https://placehold.co/150x150"
+              alt="Image of organic milk"
+              class="w-full h-32 object-cover rounded-md mb-2"
+            />
+            <h3 class="text-md font-bold">Organic Milk</h3>
+            <p class="text-sm text-gray-600">$3.50 per gallon</p>
+            <p class="text-sm text-gray-600">Quantity: 30 gallons</p>
+          </div>
+          <div class="bg-white p-4 rounded-md shadow-md">
+            <img
+              src="https://placehold.co/150x150"
+              alt="Image of fresh strawberries"
+              class="w-full h-32 object-cover rounded-md mb-2"
+            />
+            <h3 class="text-md font-bold">Fresh Strawberries</h3>
+            <p class="text-sm text-gray-600">$4.00 per lb</p>
+            <p class="text-sm text-gray-600">Quantity: 20 lbs</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
-        <div class="flex justify-around text-center py-2">
-            <a href="Homepage.html" class="text-green-600 flex flex-col items-center">
-                <i class="fas fa-home text-2xl"></i>
-                <span class="text-xs">Home</span>
-            </a>
-            <a href="market trends and pricing.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-chart-line text-2xl"></i>
-                <span class="text-xs">Market Trends</span>
-            </a>
-            <a href="Search and filter.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-shopping-cart text-2xl"></i>
-                <span class="text-xs">Buy</span>
-            </a>
-            <a href="Product listing.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-hand-holding-usd text-2xl"></i>
-                <span class="text-xs">Sell</span>
-            </a>
-            <a href="Order management.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-clipboard-list text-2xl"></i>
-                <span class="text-xs">Orders</span>
-            </a>
-        </div>
+      <div class="flex justify-around text-center py-2">
+        <a href="index.html" class="text-green-600 flex flex-col items-center">
+          <i class="fas fa-home text-2xl"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a
+          href="market trends and pricing.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-chart-line text-2xl"></i>
+          <span class="text-xs">Market Trends</span>
+        </a>
+        <a
+          href="Search and filter.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-shopping-cart text-2xl"></i>
+          <span class="text-xs">Buy</span>
+        </a>
+        <a
+          href="Product listing.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-hand-holding-usd text-2xl"></i>
+          <span class="text-xs">Sell</span>
+        </a>
+        <a
+          href="Order management.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-clipboard-list text-2xl"></i>
+          <span class="text-xs">Orders</span>
+        </a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

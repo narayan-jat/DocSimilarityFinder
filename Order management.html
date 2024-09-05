@@ -1,135 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Management for Sellers</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-100 font-roboto">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-roboto">
     <!-- Header -->
     <header class="bg-green-600 text-white text-center p-4">
-        <h1 class="text-xl font-bold">Order Management</h1>
+      <h1 class="text-xl font-bold">Order Management</h1>
     </header>
 
     <!-- Main Content -->
-    <main class="p-4" style="padding-bottom: 100px;">
-
-        <!-- New Orders Section -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold mb-4">New Orders</h2>
-            <div class="bg-white p-4 rounded-md shadow-md mb-4">
-                <div class="flex justify-between items-center mb-2">
-                    <div>
-                        <h3 class="text-md font-bold">Order #12345</h3>
-                        <p class="text-sm text-gray-600">Customer: John Doe</p>
-                        <p class="text-sm text-gray-600">Product: Fresh Carrots</p>
-                        <p class="text-sm text-gray-600">Quantity: 10 lbs</p>
-                        <p class="text-sm text-gray-600">Price: $20.00</p>
-                    </div>
-                    <div class="flex space-x-2">
-                        <button class="bg-green-600 text-white px-4 py-2 rounded-md">Accept</button>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded-md">Reject</button>
-                    </div>
-                </div>
-                <div class="text-sm text-gray-600">
-                    <i class="fas fa-credit-card mr-2"></i> Payment Status: Paid
-                </div>
+    <main class="p-4" style="padding-bottom: 100px">
+      <!-- New Orders Section -->
+      <section class="mb-6">
+        <h2 class="text-lg font-bold mb-4">New Orders</h2>
+        <div class="bg-white p-4 rounded-md shadow-md mb-4">
+          <div class="flex justify-between items-center mb-2">
+            <div>
+              <h3 class="text-md font-bold">Order #12345</h3>
+              <p class="text-sm text-gray-600">Customer: John Doe</p>
+              <p class="text-sm text-gray-600">Product: Fresh Carrots</p>
+              <p class="text-sm text-gray-600">Quantity: 10 lbs</p>
+              <p class="text-sm text-gray-600">Price: $20.00</p>
             </div>
-            <div class="bg-white p-4 rounded-md shadow-md mb-4">
-                <div class="flex justify-between items-center mb-2">
-                    <div>
-                        <h3 class="text-md font-bold">Order #12346</h3>
-                        <p class="text-sm text-gray-600">Customer: Jane Smith</p>
-                        <p class="text-sm text-gray-600">Product: Organic Milk</p>
-                        <p class="text-sm text-gray-600">Quantity: 5 gallons</p>
-                        <p class="text-sm text-gray-600">Price: $17.50</p>
-                    </div>
-                    <div class="flex space-x-2">
-                        <button class="bg-green-600 text-white px-4 py-2 rounded-md">Accept</button>
-                        <button class="bg-red-600 text-white px-4 py-2 rounded-md">Reject</button>
-                    </div>
-                </div>
-                <div class="text-sm text-gray-600">
-                    <i class="fas fa-credit-card mr-2"></i> Payment Status: Pending
-                </div>
+            <div class="flex space-x-2">
+              <button class="bg-green-600 text-white px-4 py-2 rounded-md">
+                Accept
+              </button>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md">
+                Reject
+              </button>
             </div>
-        </section>
-
-        <!-- In-Progress Orders Section -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold mb-4">In-Progress Orders</h2>
-            <div class="bg-white p-4 rounded-md shadow-md mb-4">
-                <div class="flex justify-between items-center mb-2">
-                    <div>
-                        <h3 class="text-md font-bold">Order #12344</h3>
-                        <p class="text-sm text-gray-600">Customer: Alice Johnson</p>
-                        <p class="text-sm text-gray-600">Product: Fresh Apples</p>
-                        <p class="text-sm text-gray-600">Quantity: 15 lbs</p>
-                        <p class="text-sm text-gray-600">Price: $22.50</p>
-                    </div>
-                    <div class="flex space-x-2">
-                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-md">Update</button>
-                    </div>
-                </div>
-                <div class="text-sm text-gray-600">
-                    <i class="fas fa-truck mr-2"></i> Order Status: In Delivery
-                </div>
+          </div>
+          <div class="text-sm text-gray-600">
+            <i class="fas fa-credit-card mr-2"></i> Payment Status: Paid
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-md shadow-md mb-4">
+          <div class="flex justify-between items-center mb-2">
+            <div>
+              <h3 class="text-md font-bold">Order #12346</h3>
+              <p class="text-sm text-gray-600">Customer: Jane Smith</p>
+              <p class="text-sm text-gray-600">Product: Organic Milk</p>
+              <p class="text-sm text-gray-600">Quantity: 5 gallons</p>
+              <p class="text-sm text-gray-600">Price: $17.50</p>
             </div>
-        </section>
-
-        <!-- Completed Orders Section -->
-        <section>
-            <h2 class="text-lg font-bold mb-4">Completed Orders</h2>
-            <div class="bg-white p-4 rounded-md shadow-md mb-4">
-                <div class="flex justify-between items-center mb-2">
-                    <div>
-                        <h3 class="text-md font-bold">Order #12343</h3>
-                        <p class="text-sm text-gray-600">Customer: Bob Brown</p>
-                        <p class="text-sm text-gray-600">Product: Fresh Strawberries</p>
-                        <p class="text-sm text-gray-600">Quantity: 20 lbs</p>
-                        <p class="text-sm text-gray-600">Price: $80.00</p>
-                    </div>
-                </div>
-                <div class="text-sm text-gray-600">
-                    <i class="fas fa-check-circle mr-2 text-green-600"></i> Order Status: Delivered
-                </div>
-                <div class="text-sm text-gray-600">
-                    <i class="fas fa-credit-card mr-2"></i> Payment Status: Paid
-                </div>
+            <div class="flex space-x-2">
+              <button class="bg-green-600 text-white px-4 py-2 rounded-md">
+                Accept
+              </button>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md">
+                Reject
+              </button>
             </div>
-        </section>
+          </div>
+          <div class="text-sm text-gray-600">
+            <i class="fas fa-credit-card mr-2"></i> Payment Status: Pending
+          </div>
+        </div>
+      </section>
 
+      <!-- In-Progress Orders Section -->
+      <section class="mb-6">
+        <h2 class="text-lg font-bold mb-4">In-Progress Orders</h2>
+        <div class="bg-white p-4 rounded-md shadow-md mb-4">
+          <div class="flex justify-between items-center mb-2">
+            <div>
+              <h3 class="text-md font-bold">Order #12344</h3>
+              <p class="text-sm text-gray-600">Customer: Alice Johnson</p>
+              <p class="text-sm text-gray-600">Product: Fresh Apples</p>
+              <p class="text-sm text-gray-600">Quantity: 15 lbs</p>
+              <p class="text-sm text-gray-600">Price: $22.50</p>
+            </div>
+            <div class="flex space-x-2">
+              <button class="bg-yellow-500 text-white px-4 py-2 rounded-md">
+                Update
+              </button>
+            </div>
+          </div>
+          <div class="text-sm text-gray-600">
+            <i class="fas fa-truck mr-2"></i> Order Status: In Delivery
+          </div>
+        </div>
+      </section>
+
+      <!-- Completed Orders Section -->
+      <section>
+        <h2 class="text-lg font-bold mb-4">Completed Orders</h2>
+        <div class="bg-white p-4 rounded-md shadow-md mb-4">
+          <div class="flex justify-between items-center mb-2">
+            <div>
+              <h3 class="text-md font-bold">Order #12343</h3>
+              <p class="text-sm text-gray-600">Customer: Bob Brown</p>
+              <p class="text-sm text-gray-600">Product: Fresh Strawberries</p>
+              <p class="text-sm text-gray-600">Quantity: 20 lbs</p>
+              <p class="text-sm text-gray-600">Price: $80.00</p>
+            </div>
+          </div>
+          <div class="text-sm text-gray-600">
+            <i class="fas fa-check-circle mr-2 text-green-600"></i> Order
+            Status: Delivered
+          </div>
+          <div class="text-sm text-gray-600">
+            <i class="fas fa-credit-card mr-2"></i> Payment Status: Paid
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
-        <div class="flex justify-around text-center py-2">
-            <a href="Homepage.html" class="text-green-600 flex flex-col items-center">
-                <i class="fas fa-home text-2xl"></i>
-                <span class="text-xs">Home</span>
-            </a>
-            <a href="market trends and pricing.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-chart-line text-2xl"></i>
-                <span class="text-xs">Market Trends</span>
-            </a>
-            <a href="Search and filter.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-shopping-cart text-2xl"></i>
-                <span class="text-xs">Buy</span>
-            </a>
-            <a href="Product listing.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-hand-holding-usd text-2xl"></i>
-                <span class="text-xs">Sell</span>
-            </a>
-            <a href="Order management.html" class="text-gray-600 flex flex-col items-center">
-                <i class="fas fa-clipboard-list text-2xl"></i>
-                <span class="text-xs">Orders</span>
-            </a>
-        </div>
+      <div class="flex justify-around text-center py-2">
+        <a href="index.html" class="text-green-600 flex flex-col items-center">
+          <i class="fas fa-home text-2xl"></i>
+          <span class="text-xs">Home</span>
+        </a>
+        <a
+          href="market trends and pricing.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-chart-line text-2xl"></i>
+          <span class="text-xs">Market Trends</span>
+        </a>
+        <a
+          href="Search and filter.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-shopping-cart text-2xl"></i>
+          <span class="text-xs">Buy</span>
+        </a>
+        <a
+          href="Product listing.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-hand-holding-usd text-2xl"></i>
+          <span class="text-xs">Sell</span>
+        </a>
+        <a
+          href="Order management.html"
+          class="text-gray-600 flex flex-col items-center"
+        >
+          <i class="fas fa-clipboard-list text-2xl"></i>
+          <span class="text-xs">Orders</span>
+        </a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
