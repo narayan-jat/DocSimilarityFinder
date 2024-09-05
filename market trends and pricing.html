@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Trends & Pricing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-roboto">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white text-center p-4">
+        <h1 class="text-xl font-bold">Market Trends & Pricing</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-4" style="padding-bottom: 100px;">
+
+        <!-- Filters Section -->
+        <section class="mb-6">
+            <h2 class="text-lg font-bold mb-4">Filter Market Trends</h2>
+            <div class="bg-white p-4 rounded-md shadow-md mb-4">
+                <div class="mb-4">
+                    <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                    <select id="location" class="w-full p-2 border border-gray-300 rounded-md">
+                        <option value="" disabled selected>Select State and City</option>
+                        <option value="springfield">Springfield</option>
+                        <option value="shelbyville">Shelbyville</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="category" class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                    <select id="category" class="w-full p-2 border border-gray-300 rounded-md">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="grains">Grains</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Product</label>
+                    <div class="flex items-center">
+                        <input type="text" id="product" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter product name">
+                        <button class="ml-2 p-2 bg-green-600 text-white rounded-md">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="w-full bg-green-600 text-white py-2 rounded-md">Filter</button>
+            </div>
+        </section>
+
+        <!-- Market Pricing Section -->
+        <section class="mb-6">
+            <h2 class="text-lg font-bold mb-4">Current Market Pricing</h2>
+            <div class="bg-white p-4 rounded-md shadow-md">
+                <h3 class="text-md font-bold mb-2">Product: Fresh Carrots</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 border border-gray-300 rounded-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <p class="text-sm font-bold">Average Market Price</p>
+                            <p class="text-sm">$2.00 per lb</p>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <p class="text-sm font-bold">Highest Price</p>
+                            <p class="text-sm">$2.50 per lb</p>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <p class="text-sm font-bold">Lowest Price</p>
+                            <p class="text-sm">$1.80 per lb</p>
+                        </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <p class="text-sm font-bold">Market Trend</p>
+                            <p class="text-sm text-green-600"><i class="fas fa-arrow-up"></i> Increasing</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm font-bold">Nearby Markets</p>
+                            <p class="text-sm">Springfield: $2.10 per lb, Shelbyville: $1.95 per lb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- List Product for Sale Section -->
+        <section>
+            <h2 class="text-lg font-bold mb-4">List Your Product for Sale</h2>
+            <div class="bg-white p-4 rounded-md shadow-md">
+                <form>
+                    <div class="mb-4">
+                        <label for="saleProductName" class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
+                        <input type="text" id="saleProductName" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter product name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="saleProductPrice" class="block text-sm font-medium text-gray-700 mb-1">Price</label>
+                        <input type="number" id="saleProductPrice" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter price">
+                    </div>
+                    <div class="mb-4">
+                        <label for="saleProductQuantity" class="block text-sm font-medium text-gray-700 mb-1">Quantity</label>
+                        <input type="number" id="saleProductQuantity" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Enter quantity">
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md">List Product</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
+        <div class="flex justify-around text-center py-2">
+            <a href="Homepage.html" class="text-green-600 flex flex-col items-center">
+                <i class="fas fa-home text-2xl"></i>
+                <span class="text-xs">Home</span>
+            </a>
+            <a href="market trends and pricing.html" class="text-gray-600 flex flex-col items-center">
+                <i class="fas fa-chart-line text-2xl"></i>
+                <span class="text-xs">Market Trends</span>
+            </a>
+            <a href="Search and filter.html" class="text-gray-600 flex flex-col items-center">
+                <i class="fas fa-shopping-cart text-2xl"></i>
+                <span class="text-xs">Buy</span>
+            </a>
+            <a href="Product listing.html" class="text-gray-600 flex flex-col items-center">
+                <i class="fas fa-hand-holding-usd text-2xl"></i>
+                <span class="text-xs">Sell</span>
+            </a>
+            <a href="Order management.html" class="text-gray-600 flex flex-col items-center">
+                <i class="fas fa-clipboard-list text-2xl"></i>
+                <span class="text-xs">Orders</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
