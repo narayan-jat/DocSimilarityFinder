@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search and Filter Interface</title>
+    <title>खोज और फ़िल्टर इंटरफ़ेस</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -16,19 +16,19 @@
   </head>
   <style></style>
   <body class="bg-gray-100 font-roboto">
-    <!-- Header -->
+    <!-- हेडर -->
     <header class="bg-green-600 text-white text-center p-4">
-      <h1 class="text-xl font-bold">Search and Filter</h1>
+      <h1 class="text-xl font-bold">खोज और फ़िल्टर</h1>
     </header>
 
-    <!-- Main Content -->
+    <!-- मुख्य सामग्री -->
     <main class="p-4" style="padding-bottom: 100px">
-      <!-- Search Bar with Voice Assistant -->
+      <!-- आवाज सहायक के साथ खोज बार -->
       <section class="mb-6">
         <div class="flex items-center bg-white p-2 rounded-md shadow-md">
           <input
             type="text"
-            placeholder="Search for products..."
+            placeholder="उत्पाद खोजें..."
             class="w-full p-2 text-gray-700 rounded-md focus:outline-none"
           />
           <button class="ml-2 p-2 bg-green-600 text-white rounded-md">
@@ -36,70 +36,70 @@
           </button>
         </div>
         <p class="mt-2 text-sm text-gray-600">
-          Use the microphone to search by speaking in your preferred language.
+          अपनी पसंदीदा भाषा में बोलकर खोजने के लिए माइक्रोफोन का उपयोग करें।
         </p>
       </section>
 
-      <!-- Filters -->
+      <!-- फ़िल्टर -->
       <section class="mb-6">
-        <h2 class="text-lg font-bold mb-4">Filters</h2>
+        <h2 class="text-lg font-bold mb-4">फ़िल्टर</h2>
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-white p-4 rounded-md shadow-md">
-            <h3 class="text-md font-bold mb-2">Category</h3>
+            <h3 class="text-md font-bold mb-2">श्रेणी</h3>
             <select class="w-full p-2 border border-gray-300 rounded-md">
-              <option value="" disabled selected>Select category</option>
-              <option value="fruits">Fruits</option>
-              <option value="vegetables">Vegetables</option>
-              <option value="dairy">Dairy</option>
+              <option value="" disabled selected>श्रेणी चुनें</option>
+              <option value="fruits">फल</option>
+              <option value="vegetables">सब्जियाँ</option>
+              <option value="dairy">दुग्ध उत्पाद</option>
             </select>
           </div>
           <div class="bg-white p-4 rounded-md shadow-md">
-            <h3 class="text-md font-bold mb-2">Price Range</h3>
+            <h3 class="text-md font-bold mb-2">कीमत सीमा</h3>
             <div class="flex items-center">
               <input
                 type="number"
-                placeholder="Min"
+                placeholder="न्यूनतम"
                 class="w-1/2 p-2 border border-gray-300 rounded-md mr-2"
               />
               <input
                 type="number"
-                placeholder="Max"
+                placeholder="अधिकतम"
                 class="w-1/2 p-2 border border-gray-300 rounded-md"
               />
             </div>
           </div>
           <div class="bg-white p-4 rounded-md shadow-md">
-            <h3 class="text-md font-bold mb-2">Location</h3>
+            <h3 class="text-md font-bold mb-2">स्थान</h3>
             <input
               type="text"
-              placeholder="Enter location"
+              placeholder="स्थान दर्ज करें"
               class="w-full p-2 border border-gray-300 rounded-md"
             />
           </div>
         </div>
       </section>
 
-      <!-- Filtered Product Grid -->
+      <!-- फ़िल्टर किए गए उत्पाद -->
       <section>
-        <h2 class="text-lg font-bold mb-4">Filtered Products</h2>
+        <h2 class="text-lg font-bold mb-4">फ़िल्टर किए गए उत्पाद</h2>
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-white p-4 rounded-md shadow-md">
             <div>
               <img
                 src="./assets/fresh-Apple.jpg"
-                alt="Image of fresh apples"
+                alt="ताज़ा सेब की छवि"
                 class="w-full h-32 object-cover rounded-md mb-2"
               />
-              <h3 class="text-md font-bold">Fresh Apples</h3>
-              <p class="text-sm text-gray-600">170 rupees per/kg</p>
-              <p class="text-sm text-gray-600">Location: Springfield</p>
+              <h3 class="text-md font-bold">ताज़ा सेब</h3>
+              <p class="text-sm text-gray-600">170 रुपये प्रति/किग्रा</p>
+              <p class="text-sm text-gray-600">स्थान: मिर्ज़ापुर</p>
               <div style="display: flex; justify-content: center">
                 <a
                   href="Communication platform.html"
                   class="bg-blue-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
                   style="margin: 20px auto"
                 >
-                  Connect
+                  संपर्क करें
                 </a>
               </div>
             </div>
@@ -109,19 +109,19 @@
             <div>
               <img
                 src="./assets/fresh-Carrot.jpg"
-                alt="Image of fresh carrots"
+                alt="ताज़ी गाजर की छवि"
                 class="w-full h-32 object-cover rounded-md mb-2"
               />
-              <h3 class="text-md font-bold">Fresh Carrots</h3>
-              <p class="text-sm text-gray-600">98 rupees/kg</p>
-              <p class="text-sm text-gray-600">Location: Shelbyville</p>
+              <h3 class="text-md font-bold">ताज़ी गाजर</h3>
+              <p class="text-sm text-gray-600">98 रुपये/किग्रा</p>
+              <p class="text-sm text-gray-600">स्थान: गोरखपुर</p>
               <div style="display: flex; justify-content: center">
                 <a
                   href="Communication platform.html"
                   class="bg-blue-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
                   style="margin: 20px auto"
                 >
-                  Connect
+                  संपर्क करें
                 </a>
               </div>
             </div>
@@ -131,19 +131,19 @@
             <div>
               <img
                 src="./assets/organic-Milk.jpg"
-                alt="Image of organic milk"
+                alt="ऑर्गेनिक दूध की छवि"
                 class="w-full h-32 object-cover rounded-md mb-2"
               />
-              <h3 class="text-md font-bold">Organic Milk</h3>
-              <p class="text-sm text-gray-600">50 rupees/litre</p>
-              <p class="text-sm text-gray-600">Location: Springfield</p>
+              <h3 class="text-md font-bold">ऑर्गेनिक दूध</h3>
+              <p class="text-sm text-gray-600">50 रुपये/लीटर</p>
+              <p class="text-sm text-gray-600">स्थान: कौड़ीराम</p>
               <div style="display: flex; justify-content: center">
                 <a
                   href="Communication platform.html"
                   class="bg-blue-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
-                  style="margin: 34px auto"
+                  style="margin: 20px auto"
                 >
-                  Connect
+                  संपर्क करें
                 </a>
               </div>
             </div>
@@ -153,19 +153,19 @@
             <div>
               <img
                 src="./assets/strawberries.jpg"
-                alt="Image of fresh strawberries"
+                alt="ताज़ा स्ट्रॉबेरी की छवि"
                 class="w-full h-32 object-cover rounded-md mb-2"
               />
-              <h3 class="text-md font-bold">Fresh Strawberries</h3>
-              <p class="text-sm text-gray-600">410 rupees/kg</p>
-              <p class="text-sm text-gray-600">Location: Shelbyville</p>
+              <h3 class="text-md font-bold">ताज़ा स्ट्रॉबेरी</h3>
+              <p class="text-sm text-gray-600">410 रुपये/किग्रा</p>
+              <p class="text-sm text-gray-600">स्थान: जोधपुर</p>
               <div style="display: flex; justify-content: center">
                 <a
                   href="Communication platform.html"
                   class="bg-blue-500 text-white text-sm font-semibold py-1 px-3 rounded-md underline"
-                  style="margin: 10px auto"
+                  style="margin: 20px auto"
                 >
-                  Connect
+                  संपर्क करें
                 </a>
               </div>
             </div>
@@ -174,40 +174,40 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- फ़ुटर -->
     <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
       <div class="flex justify-around text-center py-2">
         <a href="index.html" class="text-green-600 flex flex-col items-center">
           <i class="fas fa-home text-2xl"></i>
-          <span class="text-xs">Home</span>
+          <span class="text-xs">होम</span>
         </a>
         <a
           href="market trends and pricing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-chart-line text-2xl"></i>
-          <span class="text-xs">Market Trends</span>
+          <span class="text-xs">बाजार प्रवृत्तियाँ</span>
         </a>
         <a
           href="Search and filter.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-shopping-cart text-2xl"></i>
-          <span class="text-xs">Buy</span>
+          <span class="text-xs">खरीदें</span>
         </a>
         <a
           href="Product listing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-hand-holding-usd text-2xl"></i>
-          <span class="text-xs">Sell</span>
+          <span class="text-xs">बेचें</span>
         </a>
         <a
           href="Order management.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-clipboard-list text-2xl"></i>
-          <span class="text-xs">Orders</span>
+          <span class="text-xs">ऑर्डर</span>
         </a>
       </div>
     </footer>

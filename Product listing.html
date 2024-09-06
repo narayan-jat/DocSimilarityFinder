@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Listing & Visibility</title>
+    <title>उत्पाद सूची और दृश्यता</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -15,77 +15,77 @@
     />
   </head>
   <body class="bg-gray-100 font-roboto">
-    <!-- Header -->
+    <!-- हेडर -->
     <header class="bg-green-600 text-white text-center p-4">
-      <h1 class="text-xl font-bold">Product Listing & Visibility</h1>
+      <h1 class="text-xl font-bold">उत्पाद सूची और दृश्यता</h1>
     </header>
 
-    <!-- Main Content -->
+    <!-- मुख्य सामग्री -->
     <main class="p-4" style="padding-bottom: 100px">
-      <!-- Seller Product Listing Form -->
+      <!-- विक्रेता उत्पाद सूची फॉर्म -->
       <section class="mb-6">
-        <h2 class="text-lg font-bold mb-4">Upload and Manage Produce</h2>
+        <h2 class="text-lg font-bold mb-4">उत्पाद अपलोड और प्रबंधन करें</h2>
         <form class="bg-white p-4 rounded-md shadow-md">
           <div class="mb-4">
             <label
               for="productName"
               class="block text-sm font-medium text-gray-700 mb-1"
-              >Product Name</label
+              >उत्पाद का नाम</label
             >
             <input
               type="text"
               id="productName"
               class="w-full p-2 border border-gray-300 rounded-md"
-              placeholder="Enter product name"
+              placeholder="उत्पाद का नाम दर्ज करें"
             />
           </div>
           <div class="mb-4">
             <label
               for="productCategory"
               class="block text-sm font-medium text-gray-700 mb-1"
-              >Category</label
+              >श्रेणी</label
             >
             <select
               id="productCategory"
               class="w-full p-2 border border-gray-300 rounded-md"
             >
-              <option value="" disabled selected>Select category</option>
-              <option value="fruits">Fruits</option>
-              <option value="vegetables">Vegetables</option>
-              <option value="dairy">Dairy</option>
+              <option value="" disabled selected>श्रेणी चुनें</option>
+              <option value="fruits">फल</option>
+              <option value="vegetables">सब्ज़ियाँ</option>
+              <option value="dairy">डेयरी</option>
             </select>
           </div>
           <div class="mb-4">
             <label
               for="productPrice"
               class="block text-sm font-medium text-gray-700 mb-1"
-              >Price</label
+              >मूल्य</label
             >
             <input
               type="number"
               id="productPrice"
               class="w-full p-2 border border-gray-300 rounded-md"
-              placeholder="Enter price"
+              placeholder="मूल्य दर्ज करें"
             />
           </div>
           <div class="mb-4">
             <label
               for="productQuantity"
               class="block text-sm font-medium text-gray-700 mb-1"
-              >Quantity</label
+              >मात्रा</label
             >
             <input
               type="number"
               id="productQuantity"
               class="w-full p-2 border border-gray-300 rounded-md"
-              placeholder="Enter quantity"
+              placeholder="मात्रा दर्ज करें"
             />
           </div>
           <div class="mb-4">
             <label
               for="productImage"
               class="block text-sm font-medium text-gray-700 mb-1"
-              >Product Image</label
+              >उत्पाद की छवि</label
             >
             <input
               type="file"
@@ -97,93 +97,93 @@
             type="submit"
             class="w-full bg-green-600 text-white py-2 rounded-md"
           >
-            Add Product
+            उत्पाद जोड़ें
           </button>
         </form>
       </section>
 
-      <!-- Buyer Product Grid -->
+      <!-- क्रेता उत्पाद ग्रिड -->
       <section>
-        <h2 class="text-lg font-bold mb-4">Available Products</h2>
+        <h2 class="text-lg font-bold mb-4">उपलब्ध उत्पाद</h2>
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-white p-4 rounded-md shadow-md">
             <img
               src="./assets/fresh-Apple.jpg"
-              alt="Image of fresh apples"
+              alt="ताजे सेब की छवि"
               class="w-full h-32 object-cover rounded-md mb-2"
             />
-            <h3 class="text-md font-bold">Fresh Apples</h3>
-            <p class="text-sm text-gray-600">170 rupees/1 kg</p>
-            <p class="text-sm text-gray-600">Quantity: 100 kg</p>
+            <h3 class="text-md font-bold">ताजे सेब</h3>
+            <p class="text-sm text-gray-600">170 रुपए/1 किलो</p>
+            <p class="text-sm text-gray-600">मात्रा: 100 किलो</p>
           </div>
           <div class="bg-white p-4 rounded-md shadow-md">
             <img
               src="./assets/fresh-Carrot.jpg"
-              alt="Image of fresh carrots"
+              alt="ताजे गाजर की छवि"
               class="w-full h-32 object-cover rounded-md mb-2"
             />
-            <h3 class="text-md font-bold">Fresh Carrots</h3>
-            <p class="text-sm text-gray-600">98 rupees per/kg</p>
-            <p class="text-sm text-gray-600">Quantity: 150kg</p>
+            <h3 class="text-md font-bold">ताजे गाजर</h3>
+            <p class="text-sm text-gray-600">98 रुपए प्रति/किलो</p>
+            <p class="text-sm text-gray-600">मात्रा: 150 किलो</p>
           </div>
           <div class="bg-white p-4 rounded-md shadow-md">
             <img
               src="./assets/organic-Milk.jpg"
-              alt="Image of organic milk"
+              alt="जैविक दूध की छवि"
               class="w-full h-32 object-cover rounded-md mb-2"
             />
-            <h3 class="text-md font-bold">Organic Milk</h3>
-            <p class="text-sm text-gray-600">50 rupees/litre</p>
-            <p class="text-sm text-gray-600">Quantity: 30 litre</p>
+            <h3 class="text-md font-bold">जैविक दूध</h3>
+            <p class="text-sm text-gray-600">50 रुपए/लीटर</p>
+            <p class="text-sm text-gray-600">मात्रा: 30 लीटर</p>
           </div>
           <div class="bg-white p-4 rounded-md shadow-md">
             <img
               src="./assets/strawberries.jpg"
-              alt="Image of fresh strawberries"
+              alt="ताजी स्ट्रॉबेरी की छवि"
               class="w-full h-32 object-cover rounded-md mb-2"
             />
-            <h3 class="text-md font-bold">Fresh Strawberries</h3>
-            <p class="text-sm text-gray-600">410 rupees/kg</p>
-            <p class="text-sm text-gray-600">Quantity: 40kg</p>
+            <h3 class="text-md font-bold">ताजी स्ट्रॉबेरी</h3>
+            <p class="text-sm text-gray-600">410 रुपए/किलो</p>
+            <p class="text-sm text-gray-600">मात्रा: 40 किलो</p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- फुटर -->
     <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
       <div class="flex justify-around text-center py-2">
         <a href="index.html" class="text-green-600 flex flex-col items-center">
           <i class="fas fa-home text-2xl"></i>
-          <span class="text-xs">Home</span>
+          <span class="text-xs">होम</span>
         </a>
         <a
           href="market trends and pricing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-chart-line text-2xl"></i>
-          <span class="text-xs">Market Trends</span>
+          <span class="text-xs">बाजार रुझान</span>
         </a>
         <a
           href="Search and filter.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-shopping-cart text-2xl"></i>
-          <span class="text-xs">Buy</span>
+          <span class="text-xs">खरीदें</span>
         </a>
         <a
           href="Product listing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-hand-holding-usd text-2xl"></i>
-          <span class="text-xs">Sell</span>
+          <span class="text-xs">बेचें</span>
         </a>
         <a
           href="Order management.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-clipboard-list text-2xl"></i>
-          <span class="text-xs">Orders</span>
+          <span class="text-xs">आर्डर</span>
         </a>
       </div>
     </footer>
