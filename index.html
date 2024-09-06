@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farmers App</title>
+    <meta
+      name="viewport"
+      content="width=375, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>किसान ऐप</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -24,43 +28,45 @@
     </style>
   </head>
   <body class="bg-gray-100">
-    <!-- Main Hero Section -->
-
-    <style>
-      .btn {
-        background: white;
-        color: #38a169; /* Tailwind green-600 */
-        font-weight: bold;
-        padding: 0.5rem 1rem; /* Reduced padding */
-        border-radius: 9999px; /* Rounded-full */
-        margin: 10px 0.5rem; /* Space between buttons */
-        transition: background-color 0.3s ease; /* Transition effect */
-      }
-
-      .btn:hover {
-        background-color: #e2e8f0; /* Tailwind gray-200 */
-      }
-    </style>
+    <!-- मुख्य हीरो सेक्शन -->
     <header class="hero-bg text-white p-6 text-center">
-      <h1 class="text-3xl font-bold">Empowering Farmers, Connecting Markets</h1>
+      <h1 class="text-3xl font-bold">
+        किसानों को सशक्त बनाना, बाजारों से जोड़ना
+      </h1>
       <div class="mt-4">
-        <button class="btn">View Market Trends</button>
-        <button class="btn">List Your Products</button>
-        <button class="btn">Explore Buyers</button>
+        <button class="btn">बाजार के रुझान देखें</button>
+        <button class="btn">अपने उत्पाद सूचीबद्ध करें</button>
+        <button class="btn">खरीदारों को खोजें</button>
       </div>
     </header>
 
-    <!-- Quick Overview/Features Section -->
+    <!-- अपनी भाषा में सीखें सेक्शन -->
+    <section class="p-6 bg-white text-center">
+      <h2 class="text-2xl font-bold mb-4">
+        अपनी भाषा में सुविधा का उपभोग करना सीखें
+      </h2>
+      <div class="relative pb-[56.25%] h-0 mx-auto max-w-full">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/Qfozqrom7Bk?autoplay=1&mute=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- त्वरित अवलोकन / फीचर्स सेक्शन -->
     <section class="p-6" style="padding-bottom: 100px">
-      <h2 class="text-2xl font-bold text-center mb-4">Key Features</h2>
+      <h2 class="text-2xl font-bold text-center mb-4">मुख्य विशेषताएँ</h2>
       <div class="grid grid-cols-1 gap-4">
         <div
           class="flex items-center bg-white p-4 rounded-lg shadow-md hover:bg-gray-100 transition"
         >
           <i class="fas fa-chart-line text-green-600 text-3xl mr-4"></i>
           <div>
-            <h3 class="font-bold text-lg">Market Trends</h3>
-            <p>Check the latest market prices and trends.</p>
+            <h3 class="font-bold text-lg">बाजार के रुझान</h3>
+            <p>ताजा बाजार कीमतें और रुझान देखें।</p>
           </div>
         </div>
         <div
@@ -68,8 +74,8 @@
         >
           <i class="fas fa-shopping-cart text-green-600 text-3xl mr-4"></i>
           <div>
-            <h3 class="font-bold text-lg">Buy Products</h3>
-            <p>Browse and purchase fresh produce directly from farmers.</p>
+            <h3 class="font-bold text-lg">उत्पाद खरीदें</h3>
+            <p>किसानों से सीधे ताजे उत्पाद खरीदें।</p>
           </div>
         </div>
         <div
@@ -77,8 +83,10 @@
         >
           <i class="fas fa-hand-holding-usd text-green-600 text-3xl mr-4"></i>
           <div>
-            <h3 class="font-bold text-lg">Sell Products</h3>
-            <p>Easily list and manage your products for sale.</p>
+            <h3 class="font-bold text-lg">उत्पाद बेचें</h3>
+            <p>
+              अपने उत्पादों को आसानी से बिक्री के लिए सूचीबद्ध और प्रबंधित करें।
+            </p>
           </div>
         </div>
         <div
@@ -86,47 +94,47 @@
         >
           <i class="fas fa-comments text-green-600 text-3xl mr-4"></i>
           <div>
-            <h3 class="font-bold text-lg">Chat with Buyers</h3>
-            <p>Connect with buyers directly without middlemen.</p>
+            <h3 class="font-bold text-lg">खरीदारों से बात करें</h3>
+            <p>बिचौलियों के बिना सीधे खरीदारों से संपर्क करें।</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer Navigation Bar -->
+    <!-- फुटर नेविगेशन बार -->
     <footer class="fixed bottom-0 w-full bg-white border-t border-gray-300">
       <div class="flex justify-around text-center py-2">
         <a href="/" class="text-green-600 flex flex-col items-center">
           <i class="fas fa-home text-2xl"></i>
-          <span class="text-xs">Home</span>
+          <span class="text-xs">मुख्य पृष्ठ</span>
         </a>
         <a
           href="market trends and pricing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-chart-line text-2xl"></i>
-          <span class="text-xs">Market Trends</span>
+          <span class="text-xs">बाजार रुझान</span>
         </a>
         <a
           href="Search and filter.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-shopping-cart text-2xl"></i>
-          <span class="text-xs">Buy</span>
+          <span class="text-xs">खरीदें</span>
         </a>
         <a
           href="Product listing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-hand-holding-usd text-2xl"></i>
-          <span class="text-xs">Sell</span>
+          <span class="text-xs">बेचें</span>
         </a>
         <a
           href="Order management.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-clipboard-list text-2xl"></i>
-          <span class="text-xs">Orders</span>
+          <span class="text-xs">आर्डर</span>
         </a>
       </div>
     </footer>

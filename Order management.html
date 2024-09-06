@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order Management for Sellers</title>
+    <title>विक्रेताओं के लिए ऑर्डर प्रबंधन</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -17,103 +17,105 @@
   <body class="bg-gray-100 font-roboto">
     <!-- Header -->
     <header class="bg-green-600 text-white text-center p-4">
-      <h1 class="text-xl font-bold">Order Management</h1>
+      <h1 class="text-xl font-bold">ऑर्डर प्रबंधन</h1>
     </header>
 
     <!-- Main Content -->
     <main class="p-4" style="padding-bottom: 100px">
       <!-- New Orders Section -->
       <section class="mb-6">
-        <h2 class="text-lg font-bold mb-4">New Orders</h2>
+        <h2 class="text-lg font-bold mb-4">नए ऑर्डर</h2>
         <div class="bg-white p-4 rounded-md shadow-md mb-4">
           <div class="flex justify-between items-center mb-2">
             <div>
-              <h3 class="text-md font-bold">Order #12345</h3>
-              <p class="text-sm text-gray-600">Customer: Ramesh Pal</p>
-              <p class="text-sm text-gray-600">Product: Fresh Carrots</p>
-              <p class="text-sm text-gray-600">Quantity: 30kg</p>
-              <p class="text-sm text-gray-600">Price: 90 rupees</p>
+              <h3 class="text-md font-bold">ऑर्डर #12345</h3>
+              <p class="text-sm text-gray-600">ग्राहक: रमेश पाल</p>
+              <p class="text-sm text-gray-600">उत्पाद: ताजे गाजर</p>
+              <p class="text-sm text-gray-600">मात्रा: 30 किलो</p>
+              <p class="text-sm text-gray-600">मूल्य: 90 रुपये</p>
             </div>
             <div class="flex space-x-2">
               <button class="bg-green-600 text-white px-4 py-2 rounded-md">
-                Accept
+                स्वीकार करें
               </button>
               <button class="bg-red-600 text-white px-4 py-2 rounded-md">
-                Reject
+                अस्वीकार करें
               </button>
             </div>
           </div>
           <div class="text-sm text-gray-600">
-            <i class="fas fa-credit-card mr-2"></i> Payment Status: Paid
+            <i class="fas fa-credit-card mr-2"></i> भुगतान स्थिति: भुगतान किया
+            गया
           </div>
         </div>
         <div class="bg-white p-4 rounded-md shadow-md mb-4">
           <div class="flex justify-between items-center mb-2">
             <div>
-              <h3 class="text-md font-bold">Order #12346</h3>
-              <p class="text-sm text-gray-600">Customer: Mahesh</p>
-              <p class="text-sm text-gray-600">Product: Organic Milk</p>
-              <p class="text-sm text-gray-600">Quantity: 50 litre</p>
-              <p class="text-sm text-gray-600">Price: 50 rupees</p>
+              <h3 class="text-md font-bold">ऑर्डर #12346</h3>
+              <p class="text-sm text-gray-600">ग्राहक: महेश</p>
+              <p class="text-sm text-gray-600">उत्पाद: ऑर्गेनिक दूध</p>
+              <p class="text-sm text-gray-600">मात्रा: 50 लीटर</p>
+              <p class="text-sm text-gray-600">मूल्य: 50 रुपये</p>
             </div>
             <div class="flex space-x-2">
               <button class="bg-green-600 text-white px-4 py-2 rounded-md">
-                Accept
+                स्वीकार करें
               </button>
               <button class="bg-red-600 text-white px-4 py-2 rounded-md">
-                Reject
+                अस्वीकार करें
               </button>
             </div>
           </div>
           <div class="text-sm text-gray-600">
-            <i class="fas fa-credit-card mr-2"></i> Payment Status: Pending
+            <i class="fas fa-credit-card mr-2"></i> भुगतान स्थिति: लंबित
           </div>
         </div>
       </section>
 
       <!-- In-Progress Orders Section -->
       <section class="mb-6">
-        <h2 class="text-lg font-bold mb-4">In-Progress Orders</h2>
+        <h2 class="text-lg font-bold mb-4">प्रगति में ऑर्डर</h2>
         <div class="bg-white p-4 rounded-md shadow-md mb-4">
           <div class="flex justify-between items-center mb-2">
             <div>
-              <h3 class="text-md font-bold">Order #12344</h3>
-              <p class="text-sm text-gray-600">Customer: Kamla</p>
-              <p class="text-sm text-gray-600">Product: Fresh Apples</p>
-              <p class="text-sm text-gray-600">Quantity: 30 kg</p>
-              <p class="text-sm text-gray-600">Price: 220 rupees</p>
+              <h3 class="text-md font-bold">ऑर्डर #12344</h3>
+              <p class="text-sm text-gray-600">ग्राहक: कमला</p>
+              <p class="text-sm text-gray-600">उत्पाद: ताजे सेब</p>
+              <p class="text-sm text-gray-600">मात्रा: 30 किलो</p>
+              <p class="text-sm text-gray-600">मूल्य: 220 रुपये</p>
             </div>
             <div class="flex space-x-2">
               <button class="bg-yellow-500 text-white px-4 py-2 rounded-md">
-                Update
+                अपडेट करें
               </button>
             </div>
           </div>
           <div class="text-sm text-gray-600">
-            <i class="fas fa-truck mr-2"></i> Order Status: In Delivery
+            <i class="fas fa-truck mr-2"></i> ऑर्डर स्थिति: डिलीवरी में
           </div>
         </div>
       </section>
 
       <!-- Completed Orders Section -->
       <section>
-        <h2 class="text-lg font-bold mb-4">Completed Orders</h2>
+        <h2 class="text-lg font-bold mb-4">पूर्ण किए गए ऑर्डर</h2>
         <div class="bg-white p-4 rounded-md shadow-md mb-4">
           <div class="flex justify-between items-center mb-2">
             <div>
-              <h3 class="text-md font-bold">Order #12343</h3>
-              <p class="text-sm text-gray-600">Customer: Ranjan</p>
-              <p class="text-sm text-gray-600">Product: Fresh Strawberries</p>
-              <p class="text-sm text-gray-600">Quantity: 20 kg</p>
-              <p class="text-sm text-gray-600">Price: 430 rupees</p>
+              <h3 class="text-md font-bold">ऑर्डर #12343</h3>
+              <p class="text-sm text-gray-600">ग्राहक: रंजन</p>
+              <p class="text-sm text-gray-600">उत्पाद: ताजे स्ट्रॉबेरी</p>
+              <p class="text-sm text-gray-600">मात्रा: 20 किलो</p>
+              <p class="text-sm text-gray-600">मूल्य: 430 रुपये</p>
             </div>
           </div>
           <div class="text-sm text-gray-600">
-            <i class="fas fa-check-circle mr-2 text-green-600"></i> Order
-            Status: Delivered
+            <i class="fas fa-check-circle mr-2 text-green-600"></i> ऑर्डर
+            स्थिति: वितरित
           </div>
           <div class="text-sm text-gray-600">
-            <i class="fas fa-credit-card mr-2"></i> Payment Status: Paid
+            <i class="fas fa-credit-card mr-2"></i> भुगतान स्थिति: भुगतान किया
+            गया
           </div>
         </div>
       </section>
@@ -124,35 +126,35 @@
       <div class="flex justify-around text-center py-2">
         <a href="index.html" class="text-green-600 flex flex-col items-center">
           <i class="fas fa-home text-2xl"></i>
-          <span class="text-xs">Home</span>
+          <span class="text-xs">मुख्य पृष्ठ</span>
         </a>
         <a
           href="market trends and pricing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-chart-line text-2xl"></i>
-          <span class="text-xs">Market Trends</span>
+          <span class="text-xs">बाजार के रुझान</span>
         </a>
         <a
           href="Search and filter.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-shopping-cart text-2xl"></i>
-          <span class="text-xs">Buy</span>
+          <span class="text-xs">खरीदें</span>
         </a>
         <a
           href="Product listing.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-hand-holding-usd text-2xl"></i>
-          <span class="text-xs">Sell</span>
+          <span class="text-xs">बेचें</span>
         </a>
         <a
           href="Order management.html"
           class="text-gray-600 flex flex-col items-center"
         >
           <i class="fas fa-clipboard-list text-2xl"></i>
-          <span class="text-xs">Orders</span>
+          <span class="text-xs">ऑर्डर</span>
         </a>
       </div>
     </footer>
